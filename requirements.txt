@@ -3,5 +3,4 @@ pandas
 numpy
 ipeadatapy
 matplotlib
-itertools
 statsmodels
