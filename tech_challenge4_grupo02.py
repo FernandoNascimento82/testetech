@@ -9,7 +9,6 @@ from statsmodels.tsa.arima.model import ARIMA
 from datetime import date, timedelta
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.tsa.arima.model import ARIMA
-from sklearn.metrics import mean_squared_error
 
 st.title('Tech Chellenger 4 - Grupo 02')
 st.write("***Integrantes:***")
