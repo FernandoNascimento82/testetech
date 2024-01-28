@@ -19,7 +19,7 @@ st.write("*Guilherme Gentil Da Silva*")
 st.write("*João Vitor Lopes Arruda*")
 st.write("*William Fernandes Bento*")
 
-df = pd.read_csv('petroleo_data_preparado.csv')
+df = pd.read_csv('BasePrecoPetroleo.csv')
 
 font_grafico = {'family':'serif','color':'darkred','size':20}
 
