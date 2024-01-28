@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import itertools
-import ipeadatapy as ip
 import warnings
 from statsmodels.tsa.arima.model import ARIMA
 from datetime import date, timedelta
