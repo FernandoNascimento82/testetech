@@ -166,5 +166,5 @@ previsoes_df = pd.DataFrame({
 
 df_petro = df[['DATA','VALOR']]
 df_petro['DATA'] = np.datetime_as_string(df_petro['DATA'], unit='D')
-df_petro.to_csv('BasePrecoPetroleo.csv', index=False)
+df_petro.to_csv('https://github.com/FernandoNascimento82/testetech/blob/main/BasePrecoPetroleo.csv', index=False)
 previsoes_df.to_csv('previsoes_petroleo.csv', index=False)
