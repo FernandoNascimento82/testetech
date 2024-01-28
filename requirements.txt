@@ -4,4 +4,4 @@ numpy
 matplotlib
 statsmodels
 datetime
-sklearn
+sklearn.metrics.mean_squared_error
