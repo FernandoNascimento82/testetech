@@ -5,3 +5,4 @@ ipeadatapy
 matplotlib
 statsmodels
 datetime
+sklearn
