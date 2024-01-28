@@ -197,7 +197,7 @@ st.write("")
 
 df_b['DATA'] = df_b.index
 data_final = df_b['DATA'].iloc[-1]
-datas_futuras = pd.date_range(start=data_final, periods=31, inclusive='right')  # 30 dias após a última data
+datas_futuras = pd.date_range(start=data_final, periods=61, inclusive='right')  # 30 dias após a última data
 
 previsoes_futuras = modelo_arima_otimizado_fit.forecast(steps=len(datas_futuras))
 
