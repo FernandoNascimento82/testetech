@@ -214,14 +214,3 @@ plt.ylabel('Preço')
 plt.legend()
 plt.xticks(rotation=35)
 st.pyplot(grafico) 
-
-
-previsoes_df = pd.DataFrame({
-    'DATA': datas_futuras,
-    'VALOR': previsoes_futuras
-})
-
-df_petro = df[['DATA','VALOR']]
-df_petro['DATA'] = np.datetime_as_string(df_petro['DATA'], unit='D')
-df_petro.to_csv('https://github.com/FernandoNascimento82/testetech/blob/main/BasePrecoPetroleo.csv', index=False)
-previsoes_df.to_csv('https://github.com/FernandoNascimento82/testetech/blob/main/previsoes_petroleo.csv', index=False)
