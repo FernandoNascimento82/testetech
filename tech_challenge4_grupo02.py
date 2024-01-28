@@ -20,16 +20,7 @@ st.write("*Guilherme Gentil Da Silva*")
 st.write("*João Vitor Lopes Arruda*")
 st.write("*William Fernandes Bento*")
 
-df = ip.metadata()
-df['NAME2'] = df['NAME'].str.lower()
-df = df[df['NAME2'].str.contains('petróleo')]
-df = df[df['NAME2'].str.contains('preço')]
-df = df[df['NAME2'].str.contains('brent')]
-df = df[df['NAME2'].str.contains('fob')]
-df = ip.timeseries('EIA366_PBRENT366')
-df = df[df['VALUE (US$)'].notnull()]
-df = df[['VALUE (US$)']]
-df.rename(columns={'VALUE (US$)': 'VALOR'}, inplace = True)
+df = pd.read_csv('petroleo_data_preparado.csv')
 
 font_grafico = {'family':'serif','color':'darkred','size':20}
 
