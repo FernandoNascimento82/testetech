@@ -1,7 +1,6 @@
 streamlit==1.4.0
 pandas
 numpy
-ipeadatapy
 matplotlib
 statsmodels
 datetime
