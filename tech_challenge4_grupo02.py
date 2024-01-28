@@ -11,7 +11,7 @@ from datetime import date, timedelta
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.tsa.arima.model import ARIMA
 
-st.title('Tech Chellenger 4 - Grupo 02')
+st.title('Tech Challenger 4 - Grupo 02')
 st.write("***Integrantes:***")
 st.write("*Bárbara Pereira Godoi*")
 st.write("*Fernando correia do Nascimento*")
