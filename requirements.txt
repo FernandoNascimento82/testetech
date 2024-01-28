@@ -4,3 +4,4 @@ numpy
 ipeadatapy
 matplotlib
 statsmodels
+mean_squared_error
