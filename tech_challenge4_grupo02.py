@@ -41,6 +41,63 @@ plt.ylabel("Valor Total")
 plt.xticks(rotation=35)
 st.pyplot(grafico) 
 
+st.write("")
+st.write("")
+st.write("---")
+st.write("***Insights***")
+
+df_crise = df[(df.index >= '2007-01-01') & (df.index <= '2008-12-31')]
+grafico = plt.figure(figsize=(10, 6))
+plt.plot(df_crise)
+font_grafico = {'family':'serif','color':'darkred','size':20}
+plt.title("A Crise do Petróleo de 2007/2008", fontdict=font_grafico, weight='bold', style='italic')
+plt.legend(bbox_to_anchor = (1.3, 1.3), ncol = 8)
+plt.xlabel("Periodo")
+plt.ylabel("Valor Total")
+plt.xticks(rotation=35)
+st.pyplot(grafico) 
+st.write("\"""... o preço do petróleo vinha aumentando de maneira continua desde 2002. Entretanto, a partir do fim de 2007 até a metade de 2008, a velocidade desse aumento cresceu consideravelmente. O preço do barril atingiu um nível nunca imaginado, ultrapassando a barreira dos US$ 150 em julho de 2008.\"""")
+st.write("\"""... o aumento escalar no preço do petróleo em 2008 foi causado por um conjunto de fatores: especulação, forte demanda mundial, baixa capacidade ociosa e um aumento contínuo da importância do “scarcity rent”. O preço desse recurso excede o custo marginal mesmo em um mercado perfeitamente competitivo. Podemos destacar, porém, três pontos chaves que explicam em parte a crise: a baixa elasticidade preço-demanda, o aumento na demanda por petróleo da China, do Oriente Médio e de outros países industrializados, e por último, a baixa capacidade ociosa que dificulta um aumento expressivo na produção. Esses aspectos pressionaram o preço do barril para cima e deslancharam a especulação.\"""")
+st.write("*Fonte:* https://www.econ.puc-rio.br/uploads/adm/trabalhos/files/Julia_Fernandes_Ramos.pdf")
+st.write("")
+st.write("")
+
+df_crise = df[(df.index >= '2014-06-01') & (df.index <= '2016-12-31')]
+grafico = plt.figure(figsize=(10, 6))
+plt.plot(df_crise)
+font_grafico = {'family':'serif','color':'darkred','size':20}
+plt.title("Queda no preço do petróleo 2015/2016", fontdict=font_grafico, weight='bold', style='italic')
+plt.legend(bbox_to_anchor = (1.3, 1.3), ncol = 8)
+plt.xlabel("Periodo")
+plt.ylabel("Valor Total")
+plt.xticks(rotation=35)
+st.pyplot(grafico) 
+st.write("\"""... quando atingiu o menor nível desde junho de 2004, o que assustou o mercado foi um intenso e inesperado aumento nos estoques de gasolina dos Estados Unidos. Além disso, tensões geopolíticas após o anúncio de um teste de bomba de hidrogênio pela Coreia do Norte, aliadas a crescentes preocupações sobre a desaceleração da economia da China, contribuíram para o tombo dos preços.\"""")
+st.write("\"""... Ao mesmo tempo, a perspectiva de demanda menor da Europa e da Ásia devido ao menor crescimento da economia no mundo também vem contribuindo para a queda.\"""")
+st.write("*Fonte:* https://g1.globo.com/economia/mercados/noticia/2016/01/por-que-o-preco-do-petroleo-caiu-tanto-veja-perguntas-e-respostas.html")
+st.write("")
+st.write("")
+
+
+df_crise = df[(df.index >= '2020-02-01') & (df.index <= '2020-05-31')]
+grafico = plt.figure(figsize=(10, 6))
+plt.plot(df_crise)
+font_grafico = {'family':'serif','color':'darkred','size':20}
+plt.title("Pandemia Coronavirus 2019/2020", fontdict=font_grafico, weight='bold', style='italic')
+plt.legend(bbox_to_anchor = (1.3, 1.3), ncol = 8)
+plt.xlabel("Periodo")
+plt.ylabel("Valor Total")
+plt.xticks(rotation=35)
+st.pyplot(grafico) 
+st.write("\"""... Os preços do petróleo, que já estavam em trajetória de queda em meio ao avanço do novo coronavírus, derreteram neste ano, recuando para mínimas que não eram registradas desde 1999, chegando a cair abaixo de US$ 16.\"""")
+st.write("\"""... O tombo é um resultado direto da queda da demanda global, que se acentuou com as medidas de isolamento de governos para conter a pandemia e depois que a Arábia Saudita iniciou uma guerra de preços contra a Rússia.\"""")
+st.write("*Fonte:* https://g1.globo.com/economia/noticia/2020/03/09/o-que-explica-o-tombo-do-preco-do-petroleo-e-quais-os-seus-efeitos.ghtml")
+st.write("")
+st.write("")
+st.write("---")
+st.write("")
+st.write("")
+
 #Trabalhando com dados dos últimos 365 dias
 dt_hoje = date.today()
 dt_inicio = pd.to_datetime((dt_hoje + timedelta(-365)))
